@@ -14,9 +14,11 @@ public class Main {
 
 
         do {
-            System.out.println("\n--- Welcome to Azamat's Coworking space ---");
-            System.out.println("\n--------------Main Menu--------------------");
-            System.out.println("1. Admin Login");
+            System.out.println("""
+                    \n--- Welcome to Azamat's Coworking space ---
+                    --------------Main Menu----------------------
+                    1. Admin Login
+                    """);
             System.out.println("2. User Login");
             System.out.println("3. Exit");
             System.out.println("Enter your choice: ");
