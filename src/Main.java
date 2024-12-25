@@ -14,22 +14,30 @@ public class Main {
 
 
         do {
-            System.out.println("""
-                    \n--- Welcome to Azamat's Coworking space ---
-                    --------------Main Menu----------------------
+            String mainMenu = """
+                    \n---Welcome to Azamat's Coworking space---
+                    -------------Main Menu---------------------
                     1. Admin Login
-                    """);
-            System.out.println("2. User Login");
-            System.out.println("3. Exit");
-            System.out.println("Enter your choice: ");
+                    2. User Login
+                    3. Exit
+                    Enter your choice:
+                    """;
+
+            System.out.print(mainMenu);
+
             choice = scanner.nextInt();
 
             switch (choice) {
                 case 1:
-                    System.out.println("\n---Admin Menu---");
-                    System.out.println("1. Add a new coworking space");
-                    System.out.println("2. Remove a coworking space");
-                    System.out.println("3. View all reservations");
+                    String adminMenu = """
+                            \n---Admin Menu---
+                            1. Add a new coworking space
+                            2. Remove a coworking space
+                            3. View all reservations
+                            Enter your choice:
+                            """;
+                    System.out.print(adminMenu);
+
                     int adminChoice = scanner.nextInt();
 
                     switch (adminChoice) {
@@ -58,12 +66,16 @@ public class Main {
                     break;
 
                 case 2:
-                    System.out.println("/n---Customer Menu---");
-                    System.out.println("1. Browse available spaces");
-                    System.out.println("2. Make a reservation");
-                    System.out.println("3. View my reservations");
-                    System.out.println("4. Cancel a reservation");
-                    System.out.print("Enter your choice: ");
+                    String customerMenu = """
+                            \n---Customer Menu---
+                            1. Browse available spaces
+                            2. Make a reservation
+                            3. View my reservations
+                            4. Cancel a reservations
+                            Enter your choice:
+                            """;
+                    System.out.print(customerMenu);
+
                     int customerChoice = scanner.nextInt();
 
                     switch (customerChoice) {
