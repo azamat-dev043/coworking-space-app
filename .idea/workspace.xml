@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69af25d1-80fb-4877-85cb-ff9a1f912c40" name="Changes" comment="Refactored Main menu to use java text blocks">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="69af25d1-80fb-4877-85cb-ff9a1f912c40" name="Changes" comment="updated Menu bars for Main menu, Admin menu and customer menu" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735060358666</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated Menu bars for Main menu, Admin menu and customer menu">
+      <option name="closed" value="true" />
+      <created>1735111286675</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735111286675</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +146,7 @@
     <MESSAGE value="moved all my code to the secondary branch" />
     <MESSAGE value="updated misc.xml" />
     <MESSAGE value="Refactored Main menu to use java text blocks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored Main menu to use java text blocks" />
+    <MESSAGE value="updated Menu bars for Main menu, Admin menu and customer menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated Menu bars for Main menu, Admin menu and customer menu" />
   </component>
 </project>
