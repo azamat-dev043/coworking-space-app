@@ -56,7 +56,11 @@ public class Main {
                         case 2:
                             System.out.print("Enter space ID to remove: ");
                             int removeId = scanner.nextInt();
-                            admin.removeSpace(removeId);
+                            try {
+                                admin.removeSpace(removeId);
+                            } catch (InvalidSpaceException e) {
+                                System.out.println("Error: " + e.getMessage());
+                            }
                             break;
 
                         case 3:
@@ -96,7 +100,11 @@ public class Main {
                             String startTime = scanner.nextLine();
                             System.out.print("Enter end time (HH:MM): ");
                             String endTime = scanner.nextLine();
-                            customer.makeReservation(reservationId, spaceId, name, date, startTime, endTime, spaces);
+                            try {
+                                customer.makeReservation(reservationId, spaceId, name, date, startTime, endTime, spaces);
+                            } catch (InvalidReservationException e) {
+                                System.out.println("Error: " + e.getMessage());
+                            }
                             break;
                         case 3:
                             customer.viewReservations();
@@ -104,7 +112,11 @@ public class Main {
                         case 4:
                             System.out.print("Enter reservation ID to cancel: ");
                             int cancelId = scanner.nextInt();
-                            customer.cancelReservation(cancelId, spaces);
+                            try {
+                                customer.cancelReservation(cancelId, spaces);
+                            } catch (InvalidReservationException e) {
+                                System.out.println("Error: " + e.getMessage());
+                            }
                             break;
                     }
 
