@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69af25d1-80fb-4877-85cb-ff9a1f912c40" name="Changes" comment="Refactored Main menu to use java text blocks">
+    <list default="true" id="69af25d1-80fb-4877-85cb-ff9a1f912c40" name="Changes" comment="updated method in Admin.java and Customer.java. updated Main.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,23 +25,33 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {}
 }</component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": [
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
     {
-      "id": {
-        "id": "PR_kwDONgkO4M6GKI2B",
-        "number": 1
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDONgkO4M6GKI2B&quot;,
+        &quot;number&quot;: 1
       },
-      "lastSeen": 1735071732558
+      &quot;lastSeen&quot;: 1735137507392
+    },
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDONgkO4M6GVCzd&quot;,
+        &quot;number&quot;: 2
+      },
+      &quot;lastSeen&quot;: 1735327027952
     }
   ]
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/azamat-dev043/coworking-space-app.git&quot;,
     &quot;accountId&quot;: &quot;626e919a-65af-47bf-a2ff-a10de1584825&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -54,15 +63,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#1 on coworking-app-version-1&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "#2 on coworking-app-exception-handling",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="GradleRunConfiguration" />
+        <option value="JarApplication" />
+        <option value="MavenRunConfiguration" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -110,7 +128,31 @@
       <option name="project" value="LOCAL" />
       <updated>1735060358666</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated Menu bars for Main menu, Admin menu and customer menu">
+      <option name="closed" value="true" />
+      <created>1735111286675</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735111286675</updated>
+    </task>
+    <task id="LOCAL-00005" summary="created custom InvalidReservationException.java and InvalidSpaceException.java classes to handle exceptions">
+      <option name="closed" value="true" />
+      <created>1735326125603</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735326125603</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updated method in Admin.java and Customer.java. updated Main.java">
+      <option name="closed" value="true" />
+      <created>1735326966179</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735326966179</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +183,9 @@
     <MESSAGE value="moved all my code to the secondary branch" />
     <MESSAGE value="updated misc.xml" />
     <MESSAGE value="Refactored Main menu to use java text blocks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored Main menu to use java text blocks" />
+    <MESSAGE value="updated Menu bars for Main menu, Admin menu and customer menu" />
+    <MESSAGE value="created custom InvalidReservationException.java and InvalidSpaceException.java classes to handle exceptions" />
+    <MESSAGE value="updated method in Admin.java and Customer.java. updated Main.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated method in Admin.java and Customer.java. updated Main.java" />
   </component>
 </project>

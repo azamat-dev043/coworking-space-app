@@ -13,8 +13,14 @@ public class Admin {
         System.out.println("Coworking space added successfully!");
     }
 
-    public void removeSpace(int id) {
-        spaces.removeIf(space -> space.getId() == id);
+
+    public void removeSpace(int id) throws InvalidSpaceException {
+
+        boolean removed = spaces.removeIf(space -> space.getId() == id);
+
+        if (!removed) {
+            throw new InvalidSpaceException("Coworking space with ID " + id + "does not exist.");
+        }
         System.out.println("Coworking space removed successfully!");
     }
 

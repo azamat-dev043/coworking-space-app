@@ -14,7 +14,7 @@ public class Customer {
         }
     }
 
-    public void makeReservation(int reservationId, int spaceId, String customerName, String date, String startTime, String endTime, ArrayList<CoworkingSpace> spaces) {
+    public void makeReservation(int reservationId, int spaceId, String customerName, String date, String startTime, String endTime, ArrayList<CoworkingSpace> spaces) throws InvalidReservationException {
         for (CoworkingSpace space : spaces) {
             if (space.getId() == spaceId && space.isAvailable()) {
                 reservations.add(new Reservation(reservationId, spaceId, customerName, date, startTime, endTime));
@@ -23,8 +23,8 @@ public class Customer {
                 return;
             }
         }
+        throw new InvalidReservationException("Reservations failed. Space with ID: " + spaceId + " is not available.");
 
-        System.out.println("Selected space is not available.");
     }
 
     public void viewReservations() {
@@ -37,8 +37,8 @@ public class Customer {
         }
     }
 
-    public void cancelReservation(int reservationId, ArrayList<CoworkingSpace> spaces) {
-        reservations.removeIf(reservation ->  {
+    public void cancelReservation(int reservationId, ArrayList<CoworkingSpace> spaces) throws InvalidReservationException {
+        boolean cancelled = reservations.removeIf(reservation ->  {
             if (reservation.getReservationId() == reservationId) {
                 for (CoworkingSpace space : spaces) {
                     if (space.getId() == reservation.getSpaceId()) {
@@ -51,6 +51,10 @@ public class Customer {
             }
             return false;
         });
+
+        if (!cancelled) {
+            throw new InvalidReservationException("Reservation with ID: " + reservationId + " does not exist.");
+        }
 
         System.out.println("Reservation cancelled successfully!");
     }
