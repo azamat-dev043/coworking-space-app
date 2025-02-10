@@ -13,6 +13,7 @@ public class Admin {
         System.out.println("Coworking space added successfully!");
     }
 
+
     public void removeSpace(int id) throws InvalidSpaceException {
 
         boolean removed = spaces.removeIf(space -> space.getId() == id);
